@@ -8,7 +8,7 @@ public class SnmpPostTest {
 
 		// 基本認証 ユーザ="admin" パスワード="admin"
 		RestClient client = new RestClient("admin", "admin");
-		String uri = "http://192.168.10.100:8181/restconf/operations/snmp:snmp-get"; // リクエスト先
+		String uri = "http://localhost:8181/restconf/operations/snmp:snmp-get"; // リクエスト先
 
 		StringBuilder json = new StringBuilder();
 		json.append("{");

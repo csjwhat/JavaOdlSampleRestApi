@@ -7,7 +7,7 @@ public class DeleteFromFlowDeleteTest {
 		RestClient client = new RestClient("admin", "admin");
 
 		// 登録したフローを全部クリアする
-		String uri = "http://192.168.10.100:8181/restconf/config/opendaylight-inventory:nodes/node/openflow:1/flow-node-inventory:table/0/"; // リクエスト先
+		String uri = "http://localhost:8181/restconf/config/opendaylight-inventory:nodes/node/openflow:1/flow-node-inventory:table/0/"; // リクエスト先
 
 		client.delete(uri);
 		System.out.println("OK");

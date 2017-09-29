@@ -8,7 +8,7 @@ public class InsertToFlowPutTest {
 
 		RestClient client = new RestClient("admin", "admin");
 
-		String uri = "http://192.168.10.100:8181/restconf/config/opendaylight-inventory:nodes/node/openflow:1/flow-node-inventory:table/0/flow/testFlow3"; // リクエスト先
+		String uri = "http://localhost:8181/restconf/config/opendaylight-inventory:nodes/node/openflow:1/flow-node-inventory:table/0/flow/testFlow3"; // リクエスト先
 
 		StringBuilder json = new StringBuilder();
 		json.append("{\"flow\":");
